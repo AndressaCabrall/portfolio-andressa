@@ -1,0 +1,91 @@
+/*Hero*/
+
+.hero-section {
+  padding: var(--pt) 0 var(--pb);
+}
+
+.hero-eyebrow {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  margin-bottom: 12px;
+
+}
+
+.hero-title {
+
+  font-size: clamp(2.75rem, 6vw, 3.25rem);
+  line-height: 1.05;
+  margin-bottom: 14px;
+
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+/*skills*/
+.skills-section {
+
+  padding: var(--pt) 0 var(--pb);
+}
+
+.skills-title {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  margin-bottom: 8px;
+}
+
+.skills-subtitle {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+/* blocos (Uso / Aprendendo) */
+
+.skills-block {
+  margin-top: 22px;
+
+}
+
+.block-title {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  margin-bottom: 12px;
+}
+/*Grid*/
+.skills-grid{
+
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+
+}
+.skill-card{
+border:1px solid var(--border);
+border-radius: var(--radius);
+padding: 14px;
+background: rgba(255,255,255,0.02);
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.skill-icon-img{
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+  background: var(--accent);
+  
+  
+}
+.skills-name{
+  color: var(--text);
+}
