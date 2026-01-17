@@ -107,7 +107,83 @@ export default function Home() {
 
                 </div>
 
-           </section>
+            </section>
+
+            <section className="projects-section">
+  <div className="container">
+    <h2 className="projects-title">Projetos</h2>
+
+    <p className="projects-subtitles">
+      Alguns projetos que mostram minhas habilidades.
+    </p>
+
+    <div className="projects-grid">
+      <article className="project-card">
+        <div className="project-thumb" aria-hidden="true"></div>
+
+        <h3 className="project-name">Projeto 01</h3>
+        <p className="project-desc">
+          Descrição curta do que esse projeto faz e qual problema resolve.
+        </p>
+
+        <div className="project-tags" aria-label="Tecnologias">
+          <span className="tag">React</span>
+          <span className="tag">CSS</span>
+          <span className="tag">API</span>
+        </div>
+
+        <div className="project-actions">
+          <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+        </div>
+      </article>
+
+      <article className="project-card">
+        <div className="project-thumb" aria-hidden="true"></div>
+
+        <h3 className="project-name">Projeto 02</h3>
+        <p className="project-desc">
+          Descrição curta do que esse projeto faz e qual problema resolve.
+        </p>
+
+        <div className="project-tags" aria-label="Tecnologias">
+          <span className="tag">React</span>
+          <span className="tag">CSS</span>
+          <span className="tag">API</span>
+        </div>
+
+        <div className="project-actions">
+          <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+        </div>
+      </article>
+
+      <article className="project-card">
+        <div className="project-thumb" aria-hidden="true"></div>
+
+        <h3 className="project-name">Projeto 03</h3>
+        <p className="project-desc">
+          Descrição curta do que esse projeto faz e qual problema resolve.
+        </p>
+
+        <div className="project-tags" aria-label="Tecnologias">
+          <span className="tag">React</span>
+          <span className="tag">CSS</span>
+          <span className="tag">API</span>
+        </div>
+
+        <div className="project-actions">
+          <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+        </div>
+      </article>
+    </div>
+
+    <div className="projects-footer">
+      <a className="btn" href="/projects">Ver todos os Projetos</a>
+    </div>
+  </div>
+</section>
 
         </main >
 

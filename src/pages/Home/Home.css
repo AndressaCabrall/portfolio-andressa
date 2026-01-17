@@ -2,6 +2,8 @@
 
 .hero-section {
   padding: var(--pt) 0 var(--pb);
+  text-align: center;
+  
 }
 
 .hero-eyebrow {
@@ -15,7 +17,7 @@
 
 .hero-title {
 
-  font-size: clamp(2.75rem, 6vw, 3.25rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.05;
   margin-bottom: 14px;
 
@@ -26,21 +28,31 @@
   color: var(--muted);
   margin-bottom: 18px;
 }
+.actions{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  justify-content: center;
+}
 
 /*skills*/
 .skills-section {
 
   padding: var(--pt) 0 var(--pb);
+  text-align: center;
 }
 
 .skills-title {
-  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   margin-bottom: 8px;
 }
 
 .skills-subtitle {
   color: var(--muted);
   margin-bottom: 18px;
+  font-size: clamp(1.2rem, 1.3vw, 1.5rem);
 }
 
 /* blocos (Uso / Aprendendo) */
@@ -54,38 +66,121 @@
   color: var(--muted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  font-size: clamp(1rem, 1.125vw, 1.25rem);
   margin-bottom: 12px;
 }
+
 /*Grid*/
-.skills-grid{
+
+.skills-grid {
 
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin: 0;
   padding: 0;
 
 }
-.skill-card{
-border:1px solid var(--border);
-border-radius: var(--radius);
-padding: 14px;
-background: rgba(255,255,255,0.02);
-display: flex;
-align-items: center;
-gap: 10px;
+
+.skill-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.skill-icon-img{
+
+.skill-icon-img {
   width: 34px;
   height: 34px;
   display: block;
   object-fit: contain;
   background: var(--accent);
-  
-  
+
 }
-.skills-name{
+
+.skill-name {
   color: var(--text);
 }
+
+/* Projetos (preview na Home) */
+.projects-section{
+  padding: var(--pt) 0 var(--pb);
+  text-align: center;
+}
+
+.projects-title{
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom: 8px;
+}
+
+.projects-subtitles{
+  color: var(--muted);
+  margin-bottom: 18px;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.project-card{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: left; /* fica mais “portfolio” que tudo centralizado */
+}
+
+.project-thumb{
+  height: 150px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 12px;
+}
+
+.project-name{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-desc{
+  color: var(--muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.project-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tag{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.project-actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  
+}
+
+.projects-footer{
+  margin-top: 16px;
+}
+
