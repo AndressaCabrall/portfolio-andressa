@@ -1,4 +1,5 @@
 import "./Home.css";
+import profile_about from '../../assets/img/perfil/about-img2.jpeg'
 
 export default function Home() {
     return (
@@ -110,89 +111,133 @@ export default function Home() {
             </section>
 
             <section className="projects-section">
-  <div className="container">
-    <h2 className="projects-title">Projetos</h2>
+                <div className="container">
+                    <h2 className="projects-title">Projetos</h2>
 
-    <p className="projects-subtitles">
-      Alguns projetos que mostram minhas habilidades.
-    </p>
+                    <p className="projects-subtitles">
+                        Alguns projetos que mostram minhas habilidades.
+                    </p>
 
-    <div className="projects-grid">
-      <article className="project-card">
-        <div className="project-thumb" aria-hidden="true"></div>
+                    <div className="projects-grid">
+                        <article className="project-card">
+                            <div className="project-thumb" aria-hidden="true"></div>
 
-        <h3 className="project-name">Projeto 01</h3>
-        <p className="project-desc">
-          Descrição curta do que esse projeto faz e qual problema resolve.
-        </p>
+                            <h3 className="project-name">Projeto 01</h3>
+                            <p className="project-desc">
+                                Descrição curta do que esse projeto faz e qual problema resolve.
+                            </p>
 
-        <div className="project-tags" aria-label="Tecnologias">
-          <span className="tag">React</span>
-          <span className="tag">CSS</span>
-          <span className="tag">API</span>
-        </div>
+                            <div className="project-actions">
+                                <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+                            </div>
+                        </article>
 
-        <div className="project-actions">
-          <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
-        </div>
-      </article>
+                        <article className="project-card">
+                            <div className="project-thumb" aria-hidden="true"></div>
 
-      <article className="project-card">
-        <div className="project-thumb" aria-hidden="true"></div>
+                            <h3 className="project-name">Projeto 02</h3>
+                            <p className="project-desc">
+                                Descrição curta do que esse projeto faz e qual problema resolve.
+                            </p>
 
-        <h3 className="project-name">Projeto 02</h3>
-        <p className="project-desc">
-          Descrição curta do que esse projeto faz e qual problema resolve.
-        </p>
+                            <div className="project-actions">
+                                <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+                            </div>
+                        </article>
 
-        <div className="project-tags" aria-label="Tecnologias">
-          <span className="tag">React</span>
-          <span className="tag">CSS</span>
-          <span className="tag">API</span>
-        </div>
+                        <article className="project-card">
+                            <div className="project-thumb" aria-hidden="true"></div>
 
-        <div className="project-actions">
-          <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
-        </div>
-      </article>
+                            <h3 className="project-name">Projeto 03</h3>
+                            <p className="project-desc">
+                                Descrição curta do que esse projeto faz e qual problema resolve.
+                            </p>
 
-      <article className="project-card">
-        <div className="project-thumb" aria-hidden="true"></div>
 
-        <h3 className="project-name">Projeto 03</h3>
-        <p className="project-desc">
-          Descrição curta do que esse projeto faz e qual problema resolve.
-        </p>
 
-        <div className="project-tags" aria-label="Tecnologias">
-          <span className="tag">React</span>
-          <span className="tag">CSS</span>
-          <span className="tag">API</span>
-        </div>
+                            <div className="project-actions">
+                                <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+                            </div>
+                        </article>
+                    </div>
 
-        <div className="project-actions">
-          <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
-        </div>
-      </article>
-    </div>
+                    <div className="projects-footer">
+                        <a className="btn" href="/projects">Ver todos os Projetos</a>
+                    </div>
+                </div>
+            </section>
 
-    <div className="projects-footer">
-      <a className="btn" href="/projects">Ver todos os Projetos</a>
-    </div>
-  </div>
-</section>
+            <section className="about-section" id='about'>
+                <div className="container">
 
+                    <div className="about-content">
+
+                        <div className="about-media">
+
+                            <img className="about-photo" src={profile_about} alt="Foto de Andressa" />
+
+                        </div>
+                        <div className="about-body">
+                            <h2 className="about-title">Sobre Mim</h2>
+                            <p className="about-text">
+                                Aqui você conta sua transição de carreira: de onde você veio, por que decidiu
+                                mudar para front-end, como tem estudado e quais tipos de projetos você vem
+                                construindo. Fale também do que você gosta (interfaces, acessibilidade,
+                                responsividade) e do que busca agora (primeira oportunidade/estágio/júnior).
+                            </p>
+                            <p className="about-text">
+                                Aqui você conta sua transição de carreira: de onde você veio, por que decidiu
+                                mudar para front-end, como tem estudado e quais tipos de projetos você vem
+                                construindo. Fale também do que você gosta (interfaces, acessibilidade,
+                                responsividade) e do que busca agora (primeira oportunidade/estágio/júnior).
+                            </p>
+                            <div className="about-actions">
+                                <a className="btn btn-primary" href="/cv-andressa.pdf" download>Currículo</a>
+
+                                <a className="btn" href="https://wa.me/558398684-4430" target="_blank"
+                                    rel="noreferrer">WhatsApp</a>
+
+                                <p className="about-quote">
+                                    “Frase curta aqui que represente você — algo sobre evolução, constância e construir
+                                    experiências melhores.”
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section className="contact-section">
+                <div className="container">
+                    <h2 className="contact-title">Contato</h2>
+                    <p className="contact-subtitle">Quer conversar sobre oportunidades, projetos ou freelas</p>
+
+                    <div className="contact-links">
+                        <a href="mailto:SEUEMAIL@EMAIL.COM" className="btn btn-primary" target="_blank" rel="noreferrer">Email</a>
+
+                        <a href="https://wa.me/55SEUNUMEROAQUI" className="btn" target="_blank" rel="noreferrer">WhatsApp</a>
+
+                        <a href="https://www.linkedin.com/in/SEULINKAQUI" className="btn" target="_blank" rel="noreferre">LinkedIn</a>
+
+                        <a href="https://github.com/SEUGITHUB" className="btn" target="_blank" rel="noreferre">GitHub</a>
+
+                    </div>
+
+                    <p className="contact-note">📍 Disponível para estágio/júnior — remoto ou presencial (ajuste como preferir).</p>
+
+
+                </div>
+
+            </section>
         </main >
-
-
-
-
-
-
-
 
     )
 }
