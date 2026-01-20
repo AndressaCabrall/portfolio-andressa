@@ -6,8 +6,15 @@ export default function Home() {
 
         <main>
 
+            {/* Seção Hero*/}
             <header className="hero-section">
                 <div className="container">
+
+                    <div className="hero-media">
+
+                        <img className="hero-photo" src={profile_about} alt="Foto de Andressa" />
+
+                    </div>
 
                     <p className="hero-eyebrow">
                         Front-end Developer
@@ -27,6 +34,8 @@ export default function Home() {
 
                 </div>
             </header>
+
+            {/* Seção Skills*/}
 
             <section className="skills-section">
                 <div className="container">
@@ -110,6 +119,8 @@ export default function Home() {
 
             </section>
 
+            {/* Seção Projetos*/}
+
             <section className="projects-section">
                 <div className="container">
                     <h2 className="projects-title">Projetos</h2>
@@ -170,42 +181,47 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Seção About*/}
+
             <section className="about-section" id='about'>
                 <div className="container">
 
                     <div className="about-content">
 
-                        <div className="about-media">
 
-                            <img className="about-photo" src={profile_about} alt="Foto de Andressa" />
-
-                        </div>
                         <div className="about-body">
                             <h2 className="about-title">Sobre Mim</h2>
                             <p className="about-text">
-                                Aqui você conta sua transição de carreira: de onde você veio, por que decidiu
-                                mudar para front-end, como tem estudado e quais tipos de projetos você vem
-                                construindo. Fale também do que você gosta (interfaces, acessibilidade,
-                                responsividade) e do que busca agora (primeira oportunidade/estágio/júnior).
+                                Minha transição para Front-end começou quando eu decidi criar o meu próprio site
+                                de cortinas e persianas no WordPress. Eu já tinha uma bagagem sólida:
+                                8 anos no administrativo e 15 anos empreendendo, mas foi ali que eu percebi que
+                                o que eu queria de verdade era entender como as coisas funcionam por trás da tela —
+                                e codar.
                             </p>
                             <p className="about-text">
-                                Aqui você conta sua transição de carreira: de onde você veio, por que decidiu
-                                mudar para front-end, como tem estudado e quais tipos de projetos você vem
-                                construindo. Fale também do que você gosta (interfaces, acessibilidade,
-                                responsividade) e do que busca agora (primeira oportunidade/estágio/júnior).
+                                Desde então, venho estudando há 1 ano e construindo projetos com foco em interfaces responsivas, design e animações. Busco uma oportunidade como estagiária/júnior (remoto ou presencial) para evoluir e colaborar com um time.
                             </p>
+
+                            <ul className="about-softskills" aria-label="Soft skills">
+                                <li className="softskill-chip">Proatividade</li>
+                                <li className="softskill-chip">Organização</li>
+                                <li className="softskill-chip">Comunicação</li>
+                                <li className="softskill-chip">Autonomia</li>
+                                <li className="softskill-chip">Trabalho em equipe</li>
+
+                            </ul>
+
                             <div className="about-actions">
                                 <a className="btn btn-primary" href="/cv-andressa.pdf" download>Currículo</a>
 
                                 <a className="btn" href="https://wa.me/558398684-4430" target="_blank"
                                     rel="noreferrer">WhatsApp</a>
 
-                                <p className="about-quote">
-                                    “Frase curta aqui que represente você — algo sobre evolução, constância e construir
-                                    experiências melhores.”
-                                </p>
-
                             </div>
+
+                            <p className="about-quote">
+                                “Do WordPress ao React: um passo por vez, com consistência..”
+                            </p>
 
                         </div>
 
@@ -214,6 +230,8 @@ export default function Home() {
                 </div>
 
             </section>
+
+            {/* Seção Contact*/}
 
             <section className="contact-section">
                 <div className="container">
