@@ -47,29 +47,34 @@
   background: rgba(255, 255, 255, 0.03);
 }
 
-.nav-social{
+.nav-social {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.nav-icon{
+
+.nav-icon {
   width: 40px;
   height: 40px;
+  padding: 10px 12px;
   border-radius: 12px;
-  border:1px solid transparente;
+  border: 1px solid var(--border);
+
+  transition: border-color .25s ease, color .25s ease, background .25s ease;
   background: var(--accent);
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: border-color .25s ease, background .25s ease, transform .2s ease;
+
 }
-.nav-icon:hover{
-  transform: translateY(-1px);
-  border-color: var(--border);
-  background: rgba(255, 255, 255, 0.03);
+
+.nav-icon:hover {
+  transform: translateY(-2px);
+ 
 }
-.nav-icon img{
+
+.nav-icon img {
   width: 34px;
   height: 34px;
   display: block;

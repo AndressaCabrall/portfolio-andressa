@@ -1,5 +1,9 @@
 import "./Home.css";
-import profile_about from '../../assets/img/perfil/about-img2.jpeg'
+import profile_photo from '../../assets/img/perfil/profile-photo.jpeg'
+import hdc_hostImg from '../../assets/img/projetos/hdc-host.png'
+import escritorio_advImg from '../../assets/img/projetos/escritorio-advocacia.png' 
+import delicias_cafesImg from '../../assets/img/projetos/delicias-paes-cafes.png'
+
 
 export default function Home() {
     return (
@@ -7,12 +11,15 @@ export default function Home() {
         <main>
 
             {/* Seção Hero*/}
-            <header className="hero-section">
+
+            <section  id="hero" className="hero-section">
+
+            <header >
                 <div className="container">
 
                     <div className="hero-media">
 
-                        <img className="hero-photo" src={profile_about} alt="Foto de Andressa" />
+                        <img className="hero-photo" src={profile_photo} alt="Foto de Andressa" />
 
                     </div>
 
@@ -28,16 +35,19 @@ export default function Home() {
 
                     <div className="actions">
                         <a className="btn btn-primary" href="/projects">Ver Projetos</a>
-                        <a className="btn" href="/#contact">Contato</a>
+                        <a className="btn" href="#contact">Contato</a>
 
                     </div>
 
                 </div>
             </header>
 
+            </section>
+
+           
             {/* Seção Skills*/}
 
-            <section className="skills-section">
+            <section id="skills" className="skills-section">
                 <div className="container">
                     <h2 className="skills-title">
                         Skills
@@ -53,34 +63,34 @@ export default function Home() {
                         <ul className="skills-grid" aria-label="Tecnologias que uso no dia a dia">
 
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/html5.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/html5.svg" alt="Icone do HTML" />
                                 <span className="skill-name">HTML</span>
 
                             </li>
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/css-sem-fundo.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/css-sem-fundo.svg" alt="Icone do CSS" />
                                 <span className="skill-name">CSS3</span>
 
                             </li>
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/javascript-sem-fundo.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/javascript-sem-fundo.svg" alt="Icone do JavaScript" />
                                 <span className="skill-name">JavaScript</span>
 
                             </li>
 
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/react.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/react.svg" alt="Icone do React JS" />
                                 <span className="skill-name">React JS</span>
 
                             </li>
 
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/git.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/git.svg" alt="Icone do Git" />
                                 <span className="skill-name">Git</span>
 
                             </li>
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/github.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/github.svg" alt="Icone do GitHub" />
                                 <span className="skill-name">GitHub</span>
 
                             </li>
@@ -95,17 +105,17 @@ export default function Home() {
                         <ul className="skills-grid" aria-label="Tecnologias que estou aprendendo">
 
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/typescript.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/typescript.svg" alt="Icone do TypeScript" />
                                 <span className="skill-name">TypeScript</span>
 
                             </li>
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/nodedotjs.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/nodedotjs.svg" alt="Icone do Node JS" />
                                 <span className="skill-name">Node JS</span>
 
                             </li>
                             <li className="skill-card">
-                                <img className="skill-icon-img" src="/icons/figma.svg" alt="" />
+                                <img className="skill-icon-img" src="/icons/figma.svg" alt="Icone do Figma" />
                                 <span className="skill-name">Figma</span>
 
                             </li>
@@ -121,7 +131,7 @@ export default function Home() {
 
             {/* Seção Projetos*/}
 
-            <section className="projects-section">
+            <section id="projects" className="projects-section">
                 <div className="container">
                     <h2 className="projects-title">Projetos</h2>
 
@@ -131,47 +141,57 @@ export default function Home() {
 
                     <div className="projects-grid">
                         <article className="project-card">
-                            <div className="project-thumb" aria-hidden="true"></div>
+                            <div className="project-thumb" aria-hidden="true">
 
-                            <h3 className="project-name">Projeto 01</h3>
+                            <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+
+                            </div>
+
+                            <h3 className="project-name">HDC HOST</h3>
                             <p className="project-desc">
                                 Descrição curta do que esse projeto faz e qual problema resolve.
                             </p>
 
                             <div className="project-actions">
-                                <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
                             </div>
+
                         </article>
 
                         <article className="project-card">
-                            <div className="project-thumb" aria-hidden="true"></div>
+                            <div className="project-thumb" aria-hidden="true">
 
-                            <h3 className="project-name">Projeto 02</h3>
+                            <img className="project-image" src={escritorio_advImg} alt="Print da tela do Projeto Escritório de Advocacia" />
+                            </div>
+
+                            <h3 className="project-name">Escritório Advocacia</h3>
                             <p className="project-desc">
                                 Descrição curta do que esse projeto faz e qual problema resolve.
                             </p>
 
                             <div className="project-actions">
-                                <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+                                <a className="btn" href="https://github.com/AndressaCabrall/Escritorio-Advocacia" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
                             </div>
                         </article>
 
                         <article className="project-card">
-                            <div className="project-thumb" aria-hidden="true"></div>
+                            <div className="project-thumb" aria-hidden="true">
+
+                            <img className="project-image" src={delicias_cafesImg} alt="Print da tela do Projeto Delicias Artesanais e Cafés" />  
+                            </div>
 
                             <h3 className="project-name">Projeto 03</h3>
                             <p className="project-desc">
                                 Descrição curta do que esse projeto faz e qual problema resolve.
                             </p>
 
-
-
                             <div className="project-actions">
-                                <a className="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="#" target="_blank" rel="noreferrer">Live</a>
+                                <a className="btn" href="https://github.com/AndressaCabrall/Delicias-Artesanais-e-Cafes" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
                             </div>
+
                         </article>
                     </div>
 
@@ -183,7 +203,7 @@ export default function Home() {
 
             {/* Seção About*/}
 
-            <section className="about-section" id='about'>
+            <section id="about"  className="about-section">
                 <div className="container">
 
                     <div className="about-content">
@@ -212,9 +232,9 @@ export default function Home() {
                             </ul>
 
                             <div className="about-actions">
-                                <a className="btn btn-primary" href="/cv-andressa.pdf" download>Currículo</a>
+                                <a className="btn btn-primary" href="/cv-andressa.pdf" download>Currículo para Download</a>
 
-                                <a className="btn" href="https://wa.me/558398684-4430" target="_blank"
+                                <a className="btn" href="https://wa.me/5583986844430" target="_blank"
                                     rel="noreferrer">WhatsApp</a>
 
                             </div>
@@ -233,19 +253,19 @@ export default function Home() {
 
             {/* Seção Contact*/}
 
-            <section className="contact-section">
+            <section  id="contact"className="contact-section">
                 <div className="container">
                     <h2 className="contact-title">Contato</h2>
                     <p className="contact-subtitle">Quer conversar sobre oportunidades, projetos ou freelas</p>
 
                     <div className="contact-links">
-                        <a href="mailto:SEUEMAIL@EMAIL.COM" className="btn btn-primary" target="_blank" rel="noreferrer">Email</a>
+                        <a href="mailto:andressagclima@gmail.com" className="btn btn-primary" target="_blank" rel="noreferrer">Email</a>
 
-                        <a href="https://wa.me/55SEUNUMEROAQUI" className="btn" target="_blank" rel="noreferrer">WhatsApp</a>
+                        <a href="https://wa.me/5583986844430" className="btn" target="_blank" rel="noreferrer">WhatsApp</a>
 
-                        <a href="https://www.linkedin.com/in/SEULINKAQUI" className="btn" target="_blank" rel="noreferre">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/andressa-cabrall/" className="btn" target="_blank" rel="noreferre">LinkedIn</a>
 
-                        <a href="https://github.com/SEUGITHUB" className="btn" target="_blank" rel="noreferre">GitHub</a>
+                        <a href="https://github.com/AndressaCabrall" className="btn" target="_blank" rel="noreferre">GitHub</a>
 
                     </div>
 
