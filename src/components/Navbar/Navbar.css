@@ -54,14 +54,11 @@
 }
 
 .nav-icon {
+
   width: 40px;
   height: 40px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-
   transition: border-color .25s ease, color .25s ease, background .25s ease;
-  background: var(--accent);
+  
 
   display: inline-flex;
   align-items: center;
@@ -74,8 +71,3 @@
  
 }
 
-.nav-icon img {
-  width: 34px;
-  height: 34px;
-  display: block;
-}

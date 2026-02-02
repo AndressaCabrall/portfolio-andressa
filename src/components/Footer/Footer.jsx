@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer" aria-label="Rodapé">
       <div className="footer-container">
         <p className="footer-text">
-          © 2026 Andressa. Todos os direitos reservados.
+          © 2026 Andressa Cabral. Todos os direitos reservados.
         </p>
       </div>
     </footer>

@@ -1,4 +1,6 @@
 import './Navbar.css'
+import GithubIcon from "../../components/icons/GithubIcon.jsx";
+import LinkedinIcon from "../../components/icons/LinkedinIcon.jsx";
 
 export default function Navbar() {
   return (
@@ -21,11 +23,12 @@ export default function Navbar() {
           <div className='nav-social' aria-label='Redes Sociais'>
             <a className='nav-icon' href="https://github.com/AndressaCabrall" target='_blank' rel='noreferrer' arial aria-label='GitHub'> 
 
-              <img src="/icons/logotipo-github.png" alt="GitHub" />
+              <GithubIcon className="icon" />
+                                                
             </a>
             <a className='nav-icon' href="https://www.linkedin.com/in/andressa-cabrall/" target='_blank' rel='noreferrer' aria-label='Linkedin'>
 
-              <img src="/icons/linkedin.svg" alt="Linkedin" />
+            <LinkedinIcon className="icon" />
             </a>
 
 

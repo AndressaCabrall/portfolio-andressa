@@ -1,23 +1,166 @@
 import React from 'react'
 import './projects.css'
+import hdc_hostImg from '../../assets/img/projetos/hdc-host.png'
 
 
 export default function Projects() {
     return (
         <main>
-            <header className="section">
+            <section className="projects-section">
                 <div className="container">
-                    <h1>Projects</h1>
-                    <p>Alguns projetos que mostram meu progresso.</p>
-                </div>
-            </header>
+                    <h2 className="projects-title">Projetos</h2>
+                    <p className="projects-subtitle">
+                        Alguns projetos que desenvolvi para estudo e prática profissional.
+                    </p>
 
-            <section className="section">
-                <div className="container">
-                    <h2>Projetos</h2>
-                    <p>Em breve: cards aqui.</p>
+                    <div className="projects-cards">
+
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> HDC Host</h3>
+                                <p>
+                                    Website responsivo desenvolvido em React com foco em acessibilidade e SEO.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>React</span>
+                                    <span>CSS</span>
+                                    <span>Vite</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> HDC Host</h3>
+                                <p>
+                                    Website responsivo desenvolvido em React com foco em acessibilidade e SEO.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>React</span>
+                                    <span>CSS</span>
+                                    <span>Vite</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> HDC Host</h3>
+                                <p>
+                                    Website responsivo desenvolvido em React com foco em acessibilidade e SEO.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>React</span>
+                                    <span>CSS</span>
+                                    <span>Vite</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> HDC Host</h3>
+                                <p>
+                                    Website responsivo desenvolvido em React com foco em acessibilidade e SEO.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>React</span>
+                                    <span>CSS</span>
+                                    <span>Vite</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> HDC Host</h3>
+                                <p>
+                                    Website responsivo desenvolvido em React com foco em acessibilidade e SEO.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>React</span>
+                                    <span>CSS</span>
+                                    <span>Vite</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> HDC Host</h3>
+                                <p>
+                                    Website responsivo desenvolvido em React com foco em acessibilidade e SEO.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>React</span>
+                                    <span>CSS</span>
+                                    <span>Vite</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
                 </div>
             </section>
+
         </main>
     );
 }

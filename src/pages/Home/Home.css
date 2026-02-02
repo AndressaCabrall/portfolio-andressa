@@ -52,74 +52,85 @@
   justify-content: center;
 }
 
-/*Seção de skills*/
-.skills-section {
+/* ===== SKILLS ===== */
 
-  padding: var(--pt) 0 var(--pb);
-  text-align: center;
+.skills-section {
+  padding: 5rem 0;
+ 
 }
 
 .skills-title {
+  text-align: center;
   font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .skills-subtitle {
-  color: var(--muted);
-  margin-bottom: 18px;
+  text-align: center;
   font-size: clamp(1.2rem, 1.3vw, 1.5rem);
+  max-width: 820px;
+  margin: 0 auto 3rem;
+  opacity: 0.8;
 }
 
-/* blocos (Uso / Aprendendo) */
-
 .skills-block {
-  margin-top: 24px;
-
+  margin-bottom: 4rem;
 }
 
 .block-title {
-  color: var(--muted);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: clamp(1rem, 1.125vw, 1.25rem);
-  margin-bottom: 14px;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
-/*Grid*/
+/* Slider */
 
-.skills-grid {
+.skills-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 0;
-  padding: 0;
+.skills-track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: scrollSkills 25s linear infinite;
+}
 
+/* direção inversa */
+.skills-slider.reverse .skills-track {
+  animation-direction: reverse;
 }
 
 .skill-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.02);
+  min-width: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 0.6rem;
 }
 
-.skill-icon-img {
-  width: 34px;
-  height: 34px;
-  display: block;
-  object-fit: contain;
-  background: var(--accent);
-
+.skill-card span {
+  font-size: 0.9rem;
+  opacity: 0.85;
 }
 
-.skill-name {
-  color: var(--text);
+/* Animação */
+@keyframes scrollSkills {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
+
+/* Pausa ao passar o mouse */
+.skills-slider:hover .skills-track {
+  animation-play-state: paused;
+}
+
 
 /* Seção de Projetos (preview na Home) */
 
@@ -133,7 +144,7 @@
   margin-bottom: 8px;
 }
 
-.projects-subtitles{
+.projects-subtitle{
   color: var(--muted);
   margin-bottom: 18px;
   font-size: clamp(1.2rem, 1.3vw, 1.5rem);
