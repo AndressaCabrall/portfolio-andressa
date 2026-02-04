@@ -1,16 +1,82 @@
-# React + Vite
+# 💻 Portfólio — Andressa Cabral
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio pessoal como **Desenvolvedora Web Frontend**, criado para apresentar meus projetos, habilidades técnicas e um pouco sobre mim.
 
-Currently, two official plugins are available:
+O objetivo deste projeto é demonstrar minha evolução como desenvolvedora, boas práticas de código, responsividade e atenção a detalhes de UI/UX.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React (Vite)**
+* **JavaScript (ES6+)**
+* **HTML5 semântico**
+* **CSS3 moderno** (Flexbox, Grid, Media Queries)
+* **React Router**
+* **Git & GitHub**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📱 Responsividade
+
+O portfólio foi desenvolvido com abordagem **mobile-first**, possuindo ajustes específicos para os seguintes breakpoints:
+
+* `≥ 1200px` — Desktop
+* `≥ 992px` — Laptops
+* `≥ 768px` — Tablets / Menu Mobile
+* `≥ 576px` — Smartphones
+* `≥ 360px` — Telas muito pequenas
+
+Inclui **menu mobile com botão hamburger**, grids responsivos e espaçamentos adaptados para melhor leitura em qualquer dispositivo.
+
+---
+
+## 🧩 Funcionalidades
+
+* Navbar fixa com menu responsivo
+* Menu mobile com animação e controle via JavaScript
+* Seções organizadas em página única:
+
+  * Hero
+  * Sobre Mim
+  * Skills
+  * Projetos
+  * Contato
+* Cards de projetos com layout adaptável
+* Ícones de redes sociais (GitHub e LinkedIn)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+/src
+ ├─ components
+ │   ├─ icons
+ │   └─ Navbar
+ ├─ pages
+ ├─ styles
+ └─ App.jsx
+```
+
+---
+
+## 🌱 Em Evolução
+
+Este portfólio está em constante melhoria. Próximos passos planejados:
+
+* Novos projetos
+* Otimização de performance
+* Acessibilidade (ARIA / Lighthouse)
+* Animações mais refinadas
+
+---
+
+## 📬 Contato
+
+* **GitHub:** [https://github.com/AndressaCabrall](https://github.com/AndressaCabrall)
+* **LinkedIn:** [https://www.linkedin.com/in/andressa-cabrall/](https://www.linkedin.com/in/andressa-cabrall/)
+
+---
+
+✨ Desenvolvido com foco em simplicidade, clareza e evolução contínua.
