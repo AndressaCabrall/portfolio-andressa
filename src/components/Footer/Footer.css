@@ -20,3 +20,20 @@
     font-size: 0.95rem;
     line-height: 1.6;
   }
+
+  @media (max-width: 360px) {
+
+    .footer {
+      padding: 18px 0; /* menos altura */
+    }
+  
+    .footer-container {
+      padding: 0 16px; /* menos espaço lateral */
+    }
+  
+    .footer-text {
+      font-size: 0.8rem; /* texto menor */
+      line-height: 1.4;
+    }
+  }
+  

@@ -1,8 +1,8 @@
 import "./Home.css";
-import profile_photo from '../../assets/img/perfil/profile-photo.jpeg'
-import hdc_hostImg from '../../assets/img/projetos/hdc-host.png'
-import escritorio_advImg from '../../assets/img/projetos/escritorio-advocacia.png'
-import delicias_cafesImg from '../../assets/img/projetos/delicias-paes-cafes.png'
+import profile_photo from '../../assets/img/perfil/andressa4.webp'
+import hdc_hostImg from '../../assets/img/projetos/hdc-host.webp'
+import escritorio_advImg from '../../assets/img/projetos/escritorio-advocacia.webp'
+import delicias_cafesImg from '../../assets/img/projetos/delicias-paes-cafes.webp'
 import GithubIcon from "../../components/icons/GithubIcon.jsx";
 import HtmlIcon from "../../components/icons/HtmlIcon.jsx";
 import CssIcon from "../../components/icons/CssIcon.jsx";
@@ -233,12 +233,12 @@ export default function Home() {
 
                             <h3 className="project-name">Escritório Advocacia</h3>
                             <p className="project-desc">
-                                Descrição curta do que esse projeto faz e qual problema resolve.
+                                Site moderno e responsivo para escritório de advocacia, destacando serviços jurídicos e facilitando o contato com clientes.
                             </p>
 
                             <div className="project-actions">
                                 <a className="btn" href="https://github.com/AndressaCabrall/Escritorio-Advocacia" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
+                                <a className="btn btn-primary" href="https://pearsonhardman.andressacabraltech.com.br" target="_blank" rel="noreferrer">Live</a>
                             </div>
                         </article>
 
@@ -250,7 +250,7 @@ export default function Home() {
 
                             <h3 className="project-name">Delicias Artesanais e Cafés</h3>
                             <p className="project-desc">
-                                Site de pães artesanais e cafés, desenvolvido com HTML, CSS e JavaScript, com layout responsivo.
+                                Site de pães artesanais e cafés, desenvolvido com HTML, CSS e JavaScript para menu mobile.
                             </p>
 
                             <div className="project-actions">
@@ -278,11 +278,15 @@ export default function Home() {
                         <div className="about-body">
                             <h2 id="about-title" className="about-title">Sobre Mim</h2>
                             <p className="about-text">
-                            Minha transição para o Front-end começou quando decidi criar meu próprio site de cortinas e persianas em WordPress. Apesar de já ter uma trajetória consolidada — 8 anos de experiência na área administrativa e 15 anos empreendendo — foi nesse processo que percebi que queria ir além da interface visual e entender, de fato, como tudo funciona por trás da tela.
+                                Minha transição para o Front-end começou ao criar meu próprio site de cortinas e persianas em WordPress. Apesar de ter uma trajetória consolidada — 8 anos na área administrativa e 15 anos empreendendo —, percebi nesse processo que queria ir além da interface visual e entender como tudo funciona por trás da tela.
                             </p>
                             <p className="about-text">
-                            Há cerca de 1 ano, venho me dedicando ao estudo e à prática de desenvolvimento Front-end, criando projetos com foco em interfaces responsivas, atenção a detalhes, design e animações. Busco uma oportunidade como desenvolvedora Front-end júnior ou estagiária, em formato remoto ou presencial, para evoluir tecnicamente e colaborar com um time.
+                                Nos últimos anos, venho me dedicando ao estudo e à prática de desenvolvimento Front-end, criando projetos focados em interfaces responsivas, atenção aos detalhes, design e animações. Valorizo soluções elegantes, funcionais e uma boa experiência para o usuário.
                             </p>
+                            <p className="about-text">
+                                Busco uma oportunidade como desenvolvedora Front-end júnior ou estagiária, em formato remoto ou presencial, para continuar evoluindo tecnicamente e contribuir com um time engajado e criativo.
+                            </p>
+
 
                             <ul className="about-softskills" aria-label="Soft skills">
                                 <li className="softskill-chip">Proatividade</li>
@@ -293,16 +297,8 @@ export default function Home() {
 
                             </ul>
 
-                            <div className="about-actions">
-                                <a className="btn btn-primary" href="/cv-andressa.pdf" download>Currículo para Download</a>
-
-                                <a className="btn" href="https://wa.me/5583986844430" target="_blank"
-                                    rel="noreferrer">WhatsApp</a>
-
-                            </div>
-
                             <p className="about-quote">
-                                “Do WordPress ao React: um passo por vez, com consistência..”
+                            “Do WordPress ao React, avançando passo a passo com consistência.”
                             </p>
 
                         </div>

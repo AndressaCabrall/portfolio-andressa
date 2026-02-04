@@ -1,14 +1,8 @@
 .site-header {
+  position: relative;
+  z-index: 10;
   border-bottom: 1px solid var(--border);
   background: var(--bg);
-}
-
-.nav {
-  height: var(--nav-h);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
 }
 
 .brand {
@@ -23,7 +17,22 @@
   display: block;
 }
 
+.nav {
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-toggle {
+  position: relative;
+  z-index: 30;
+  display: none;
+}
+
 .nav-menu {
+
   list-style: none;
   display: flex;
   align-items: center;
@@ -58,7 +67,7 @@
   width: 40px;
   height: 40px;
   transition: border-color .25s ease, color .25s ease, background .25s ease;
-  
+
 
   display: inline-flex;
   align-items: center;
@@ -68,6 +77,89 @@
 
 .nav-icon:hover {
   transform: translateY(-2px);
- 
+
 }
 
+/*Responsividade*/
+
+@media (max-width: 768px) {
+
+  /* Seção da Navbar*/
+  .nav {
+    justify-content: space-between;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+  }
+
+  .nav-menu {
+
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    width: 160px;
+    font-size: 1.1rem;
+    background: transparente;
+    flex-direction: column;
+    padding: 6rem 1.5rem;
+    right: -100%;
+    gap: 1.2rem;
+    transition: right 0.9s ease;
+    z-index: 20;
+  }
+
+  /* aparece */
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-social {
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .nav {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .nav {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .nav {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .nav-menu {
+    right: 0;
+    align-items: flex-end;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+
+  .nav-menu li {
+    width: auto;
+    text-align: right;
+  }
+}
