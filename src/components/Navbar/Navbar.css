@@ -152,14 +152,18 @@
   }
 
   .nav-menu {
-    right: 0;
-    align-items: flex-end;
-    padding-right: 20px;
-    font-size: 14px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-right: 0;
+   
   }
 
   .nav-menu li {
     width: auto;
     text-align: right;
+    
   }
+  
 }

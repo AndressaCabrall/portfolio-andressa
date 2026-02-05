@@ -12,6 +12,9 @@ import GitIcon from "../../components/icons/GitIcon.jsx";
 import TypescriptIcon from "../../components/icons/TypescriptIcon.jsx";
 import FigmaIcon from "../../components/icons/FigmaIcon.jsx";
 import NodejsIcon from "../../components/icons/NodejsIcon.jsx";
+import PhpIcon from "../../components/icons/PhpIcon.jsx";
+import MysqlIcon from "../../components/icons/MysqlIcon.jsx";
+
 
 
 
@@ -125,6 +128,22 @@ export default function Home() {
                                     <GithubIcon className="icon" />
                                     <span>GitHub</span>
                                 </li>
+                                <li className="skill-card">
+                                    <JsscriptIcon className="icon" />
+                                    <span>JavaScript</span>
+                                </li>
+                                <li className="skill-card">
+                                    <ReactIcon className="icon" />
+                                    <span>React</span>
+                                </li>
+                                <li className="skill-card">
+                                    <GitIcon className="icon" />
+                                    <span>Git</span>
+                                </li>
+                                <li className="skill-card">
+                                    <GithubIcon className="icon" />
+                                    <span>GitHub</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -147,19 +166,13 @@ export default function Home() {
                                     <FigmaIcon className="icon" />
                                     <span>Figma</span>
                                 </li>
-
-                                {/* duplicados */}
                                 <li className="skill-card">
-                                    <TypescriptIcon className="icon" />
-                                    <span>TypeScript</span>
+                                    <PhpIcon className="icon" />
+                                    <span>Php</span>
                                 </li>
                                 <li className="skill-card">
-                                    <NodejsIcon className="icon" />
-                                    <span>Node.js</span>
-                                </li>
-                                <li className="skill-card">
-                                    <FigmaIcon className="icon" />
-                                    <span>Figma</span>
+                                    <MysqlIcon className="icon" />
+                                    <span>Mysql</span>
                                 </li>
 
                                 {/* duplicados */}
@@ -175,6 +188,7 @@ export default function Home() {
                                     <FigmaIcon className="icon" />
                                     <span>Figma</span>
                                 </li>
+
                                 {/* duplicados */}
                                 <li className="skill-card">
                                     <TypescriptIcon className="icon" />
@@ -188,6 +202,40 @@ export default function Home() {
                                     <FigmaIcon className="icon" />
                                     <span>Figma</span>
                                 </li>
+                                <li className="skill-card">
+                                    <PhpIcon className="icon" />
+                                    <span>Php</span>
+                                </li>
+                                <li className="skill-card">
+                                    <MysqlIcon className="icon" />
+                                    <span>Mysql</span>
+                                </li>
+
+                                 {/* duplicados */}
+                                 <li className="skill-card">
+                                    <TypescriptIcon className="icon" />
+                                    <span>TypeScript</span>
+                                </li>
+                                <li className="skill-card">
+                                    <NodejsIcon className="icon" />
+                                    <span>Node.js</span>
+                                </li>
+                                <li className="skill-card">
+                                    <FigmaIcon className="icon" />
+                                    <span>Figma</span>
+                                </li>
+                                <li className="skill-card">
+                                    <PhpIcon className="icon" />
+                                    <span>Php</span>
+                                </li>
+                                <li className="skill-card">
+                                    <MysqlIcon className="icon" />
+                                    <span>Mysql</span>
+                                </li>
+
+
+
+                              
                             </ul>
                         </div>
                     </div>
@@ -298,7 +346,7 @@ export default function Home() {
                             </ul>
 
                             <p className="about-quote">
-                            “Do WordPress ao React, avançando passo a passo com consistência.”
+                                “Do WordPress ao React, avançando passo a passo com consistência.”
                             </p>
 
                         </div>

@@ -122,6 +122,7 @@
   position: relative;
 }
 
+
 .skills-track {
   display: flex;
   gap: 2.5rem;
@@ -135,11 +136,17 @@
 }
 
 .skill-card {
-  min-width: 120px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
+}
+
+.skill-card img,
+.skill-card svg {
+  width: 100px;
+  height: 60px;
 }
 
 .skill-card span {
@@ -444,6 +451,25 @@
     gap: 10px;
   }
 
+  /* Skills */
+
+  .skill-card img,
+  .skill-card svg {
+    width: 38px;
+    max-height: 38px;
+    height: auto;
+  }
+
+  
+  .skill-card span {
+    font-size: 0.8rem;
+  }
+
+ 
+  .skills-track {
+    gap: 0.5rem;
+  }
+
   /* Projetos */
 
   .projects-section {
@@ -460,6 +486,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .project-card {
     width: 100%;
   }
@@ -476,6 +503,7 @@
     font-size: 0.95rem;
   }
 }
+
 @media (max-width: 360px) {
 
   /* Geral*/
@@ -549,7 +577,7 @@
   .projects-subtitle {
     font-size: 1rem;
     margin-bottom: 14px;
-    
+
   }
 
   .projects-grid {
@@ -616,10 +644,11 @@
     gap: 8px;
     margin-top: 30px;
   }
+
   .contact-links .btn,
   .contact-links a {
     font-size: 0.85rem;
-    padding: 8px 14px; 
+    padding: 8px 14px;
   }
 
   .contact-note {
