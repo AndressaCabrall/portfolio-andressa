@@ -63,7 +63,7 @@ export default function Home() {
 
             <section id="skills" className="skills-section">
                 <div className="container">
-                    <h2 className="skills-title">Skills</h2>
+                    <h2 className="skills-title">Stacks</h2>
 
                     <p className="skills-subtitle">
                         Linguagens, frameworks, ferramentas e tecnologias que utilizo no dia a dia

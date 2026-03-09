@@ -2,6 +2,8 @@ import React from 'react'
 import './projects.css'
 import pg_pinterestImg from '../../assets/img/projetos/pagina-pinterest.webp'
 import pg_agcortinasImg from '../../assets/img/projetos/ag-cortinas.webp'
+import pg_agencia_viagensImg from '../../assets/img/projetos/agencia-viagens.webp'
+
 
 
 export default function Projects() {
@@ -15,6 +17,30 @@ export default function Projects() {
                     </p>
 
                     <div className="projects-cards">
+
+                    <article className="project-card">
+                            <div className="project-image">
+                                <img className="project-image" src={pg_agencia_viagensImg} alt="Print da tela da Gom Mundo agência de viagens" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3> GoMundo Agência de viagens</h3>
+                                <p>
+                                Landing page desenvolvida para agência de viagens com foco em conversão e experiência do usuário. Design moderno com seções estratégicas para destinos em destaque, pacotes promocionais e formulário de contato integrado. Interface responsiva, animações suaves e navegação otimizada para diferentes dispositivos.
+                                </p>
+
+                                <div className="project-tags">
+                                    <span>JsScript</span>
+                                    <span>Gsap</span>
+                                    <span>HTML & CSS</span>
+                                </div>
+
+                                <div className="project-links">
+                                <a className="btn" href="https://github.com/AndressaCabrall/GoMundo-agencia-viagem" target="_blank" rel="noreferrer">GitHub</a>
+                                <a className="btn btn-primary" href="https://viagens.vendasonlinemkt.com.br" target="_blank" rel="noreferrer">Live</a>
+                                </div>
+                            </div>
+                        </article>
 
                         <article className="project-card">
                             <div className="project-image">
@@ -135,29 +161,7 @@ export default function Projects() {
                                 </div>
                             </div>
                         </article>
-                        <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src="" alt="" />
-                            </div>
-
-                            <div className="project-content">
-                                <h3> Projeto em Construção</h3>
-                                <p>
-                                Website em desenvolvimento.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>React</span>
-                                    <span>CSS</span>
-                                    <span>Vite</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
-                                </div>
-                            </div>
-                        </article>
+                       
 
                     </div>
                 </div>

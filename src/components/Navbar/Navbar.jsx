@@ -17,6 +17,7 @@ export default function Navbar() {
 
     <header className='site-header'>
       <div className="container">
+        
         <nav className='nav' aria-label='Navegação Principal'>
           <a className='brand' href="/">
             <img className='brand-logo' src="/Logo2.png" alt="Andressa Cabral" />
