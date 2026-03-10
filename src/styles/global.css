@@ -1,96 +1,115 @@
  /*Variáveis CSS root-facilidade para manutenção*/
- 
- :root{
 
---bg:#0f0e0e;
---panel:rgba(255,255,255,0.6);
---border:rgba(255,255,255,0.16);
---text:#ffffff;
---muted:rgba(255,255,255,0.75);
---accent:#00ffff;
+ :root {
+
+   --bg: #0f0e0e;
+   --panel: rgba(255, 255, 255, 0.6);
+   --border: rgba(255, 255, 255, 0.16);
+   --text: #ffffff;
+   --muted: rgba(255, 255, 255, 0.75);
+   --accent: #00ffff;
 
 
---nav-h: 84px;
---max: 1100px;
---px: 24px;
---pt: 90px;
---pb: 80px;
+   --nav-h: 84px;
+   --max: 1100px;
+   --px: 24px;
+   --pt: 90px;
+   --pb: 80px;
 
---radius: 16px;
+   --radius: 16px;
 
-}
-/* Reset básico-elementos sem margin e preenchimentos*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Scroll suave e conteudo não se esconde atrás da navbar*/
-html {
-  scroll-behavior:smooth;
-  scroll-padding-top: var(--nav-h);
-}
-/* Corpo definições de fundo, tipografia e texto*/
-body{
-  min-height:100vh;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  line-height:1.5;
-}
-/* Links- herda a cor do elemento pai, paleta de cores consistente, não muda de cor*/
-a{
-  color:inherit;
-  
-}
-/* Container- centraliza o conteúdo e padding horizontal*/
-.container{
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--px);
-}
+ }
 
-/* Seções-aplica padding vertical às seções*/
-.section{
-  padding: var(--pt) 0 var(--pb);
-}
+ /* Reset básico-elementos sem margin e preenchimentos*/
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-/* Botões estilizações- aparência, comportamento, animações no hover*/
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:12px 18px;
-  border-radius:12px;
-  border:1px solid var(--border);
-  text-decoration:none;
-  cursor:pointer;
-  background: transparent;
-  color: var(--text);
-  transition: transform .2s ease, background .25s ease, border-color .25s ease, color .25s ease;
-}
+ /* Scroll suave e conteudo não se esconde atrás da navbar*/
+ html {
 
-.btn:hover{
-  transform: translateY(-2px);
-  border-color: var(--accent);
-}
-.btn-primary{
-  background: var(--accent);
-  color:#000;
-  border-color: var(--accent);
-}
+   scroll-padding-top: var(--nav-h);
+ }
 
-/* Classes de ações- controle de layout dos botões de ação*/
-.actions{
-  margin-top: 18px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  font-size: 1.1rem;
-}
-/* Main- área principal ocupando toda altura de tela */
-main{
-  width: 100%;
-  min-height: 100vh;
-}
+ /* Corpo definições de fundo, tipografia e texto*/
+ body {
+   min-height: 100vh;
+   background: var(--bg);
+   color: var(--text);
+   font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+   line-height: 1.5;
+ }
+
+ /* Links- herda a cor do elemento pai, paleta de cores consistente, não muda de cor*/
+ a {
+   color: inherit;
+
+ }
+
+ /* Container- centraliza o conteúdo e padding horizontal*/
+ .container {
+   max-width: var(--max);
+   margin: 0 auto;
+   padding: 0 var(--px);
+ }
+
+ /* Seções-aplica padding vertical às seções*/
+ .section {
+   padding: var(--pt) 0 var(--pb);
+ }
+
+ /* Botões estilizações- aparência, comportamento, animações no hover*/
+ .btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   padding: 12px 18px;
+   border-radius: 12px;
+   border: 1px solid var(--border);
+   text-decoration: none;
+   cursor: pointer;
+   background: transparent;
+   color: var(--text);
+   transition: transform .2s ease, background .25s ease, border-color .25s ease, color .25s ease;
+ }
+
+ .btn:hover {
+   transform: translateY(-2px);
+   border-color: var(--accent);
+ }
+
+ .btn-primary {
+   background: var(--accent);
+   color: #000;
+   border-color: var(--accent);
+ }
+
+ /* Classes de ações- controle de layout dos botões de ação*/
+ .actions {
+   margin-top: 18px;
+   display: flex;
+   gap: 12px;
+   flex-wrap: wrap;
+   font-size: 1.1rem;
+ }
+
+ /* Main- área principal ocupando toda altura de tela */
+ main {
+   width: 100%;
+   min-height: 100vh;
+ }
+
+ #smooth-content {
+   overflow: hidden;
+   /* Isso impede que elementos internos criem scrolls extras */
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
+
+ #smooth-wrapper {
+   min-height: 100vh;
+ }

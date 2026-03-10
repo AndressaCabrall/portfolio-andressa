@@ -24,6 +24,11 @@
   justify-content: space-between;
   gap: 16px;
 }
+.nav-menu.active{
+ background: rgba(255,255,255,.1);
+ backdrop-filter: blur(10px) saturate(180%);
+ height: 100%;
+}
 
 .nav-toggle {
   position: relative;
