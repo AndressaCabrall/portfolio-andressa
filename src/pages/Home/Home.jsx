@@ -15,11 +15,26 @@ import NodejsIcon from "../../components/icons/NodejsIcon.jsx";
 import PhpIcon from "../../components/icons/PhpIcon.jsx";
 import MysqlIcon from "../../components/icons/MysqlIcon.jsx";
 
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 
 
 export default function Home() {
+    
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }
+    }, [location]);
+
+
+
     return (
 
         <main>

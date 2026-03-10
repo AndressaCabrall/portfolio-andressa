@@ -34,8 +34,8 @@ export default function Navbar() {
           <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
             <li><a className="nav-link" href="/">Home</a></li>
             <li><a className="nav-link" href="/projects">Projetos</a></li>
-            <li><a className="nav-link" href="#about">Sobre Mim</a></li>
-            <li><a className="nav-link" href="#contact">Contato</a></li>
+            <li><a className="nav-link" href="/#about">Sobre Mim</a></li>
+            <li><a className="nav-link" href="/#contact">Contato</a></li>
           </ul>
 
             <div className='nav-social' aria-label='Redes Sociais'>
