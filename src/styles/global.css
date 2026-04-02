@@ -71,23 +71,21 @@
    border: 1px solid var(--border);
    text-decoration: none;
    cursor: pointer;
-   background: transparent;
-   color: var(--text);
+   background: var(--accent);
+   color: #000;
+   border-color: var(--accent);
+   
    transition: transform .2s ease, background .25s ease, border-color .25s ease, color .25s ease;
  }
 
  .btn:hover {
-   transform: translateY(-2px);
-   border-color: var(--accent);
+   transform: translateY(-3px);
+  
  }
 
- .btn-primary {
-   background: var(--accent);
-   color: #000;
-   border-color: var(--accent);
- }
 
  /* Classes de ações- controle de layout dos botões de ação*/
+ 
  .actions {
    margin-top: 18px;
    display: flex;

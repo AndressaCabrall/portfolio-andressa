@@ -1,167 +1,94 @@
 import React from 'react'
 import './projects.css'
-import pg_pinterestImg from '../../assets/img/projetos/pagina-pinterest.webp'
-import pg_agcortinasImg from '../../assets/img/projetos/ag-cortinas.webp'
-import pg_agencia_viagensImg from '../../assets/img/projetos/agencia-viagens.webp'
+
+import pg_agencia_viagensImg from "../../assets/img/projetos/agencia-viagens.webp";
+import hdc_hostImg from "../../assets/img/projetos/hdc-host.webp";
+import escritorio_advImg from "../../assets/img/projetos/escritorio-advocacia.webp";
+
+
 
 
 
 export default function Projects() {
     return (
         <main>
-            <section className="projects-section">
+            <section className="all-projects-section">
                 <div className="container">
-                    <h2 className="projects-title">Projetos</h2>
-                    <p className="projects-subtitle">
+
+                    <h2 className="all-projects-title">Projetos</h2>
+                    <p className="all-projects-subtitle">
                         Alguns projetos que desenvolvi para estudo e prática profissional.
                     </p>
 
-                    <div className="projects-cards">
+                    <div className="all-projects-grid">
 
-                    <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src={pg_agencia_viagensImg} alt="Print da tela da Gom Mundo agência de viagens" />
-                            </div>
-
-                            <div className="project-content">
-                                <h3> GoMundo Agência de viagens</h3>
-                                <p>
-                                Landing page desenvolvida para agência de viagens com foco em conversão e experiência do usuário. Design moderno com seções estratégicas para destinos em destaque, pacotes promocionais e formulário de contato integrado. Interface responsiva, animações suaves e navegação otimizada para diferentes dispositivos.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>JsScript</span>
-                                    <span>Gsap</span>
-                                    <span>HTML & CSS</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/GoMundo-agencia-viagem" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://viagens.vendasonlinemkt.com.br" target="_blank" rel="noreferrer">Live</a>
+                        <article className="all-project-card card-gomundo">
+                            <div className="all-project-card-img" aria-hidden="true">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcSet={pg_agencia_viagensImg} />
+                                    <img src={pg_agencia_viagensImg} alt="Print da tela da GoMundo agência de viagens" />
+                                </picture>
+                                <div className="all-project-links">
+                                    <a className="btn" href="https://github.com/AndressaCabrall/GoMundo-agencia-viagem" target="_blank" rel="noreferrer">GitHub</a>
+                                    <a className="btn btn-primary" href="https://viagens.vendasonlinemkt.com.br" target="_blank" rel="noreferrer">Live</a>
                                 </div>
                             </div>
-                        </article>
-
-                        <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src={pg_pinterestImg} alt="Print da tela do Pagina clone do Pinterest" />
-                            </div>
-
-                            <div className="project-content">
-                                <h3> Pagina inspirada no Pinterest</h3>
-                                <p>
-                                Aplicação web inspirada no Pinterest, desenvolvida com Python e Flask, onde implementei estrutura de rotas, renderização de páginas e realizei o deploy da aplicação. O projeto teve como foco o aprendizado prático de backend, organização da aplicação e fluxo entre páginas.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>Html</span>
-                                    <span>CSS</span>
-                                    <span>Python</span>
-                                    <span>Flask</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/Pagina-Fake-Pinterest" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://andressa.pythonanywhere.com/" target="_blank" rel="noreferrer">Live</a>
-                                </div>
+                            <h3 className="all-project-name">GoMundo Agência de Viagens</h3>
+                            <p className="all-project-desc">
+                                Landing page para agência de viagens com foco em conversão. Design moderno, animações suaves em GSAP, seções para destinos e pacotes promocionais, interface responsiva e navegação otimizada.
+                            </p>
+                            <div className="all-project-tags">
+                                <span className="tag">JavaScript</span>
+                                <span className="tag">GSAP</span>
+                                <span className="tag">HTML</span>
+                                <span className="tag">CSS</span>
                             </div>
                         </article>
 
-                        <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src={pg_agcortinasImg} alt="Pint da tela do site Ag Cortinas e Persianas" />
-                            </div>
-
-                            <div className="project-content">
-                                <h3> AG cortinas e Persianas</h3>
-                                <p>
-                                Site institucional de cortinas e persianas, desenvolvido em WordPress como meu primeiro projeto na plataforma. Página única, com foco em apresentação dos serviços, navegação por âncoras, design clean em tons neutros e layout responsivo, priorizando experiência do usuário e clareza comercial.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>WordPress</span>
-                                    <span>Elementor</span>
-                                    <span>Hostinger</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://agcortinas.andressacabraltech.com.br" target="_blank" rel="noreferrer">Live</a>
+                        <article className="all-project-card card-hdchost">
+                            <div className="all-project-card-img" aria-hidden="true">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcSet={hdc_hostImg} />
+                                    <img src={hdc_hostImg} alt="Print da tela do Projeto Hdc Host" />
+                                </picture>
+                                <div className="all-project-links">
+                                    <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
+                                    <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
                                 </div>
                             </div>
-                        </article>
-
-                        <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src=""  alt="" />
-                            </div>
-
-                            <div className="project-content">
-                                <h3> Projeto em Construção</h3>
-                                <p>
-                                    Website em desenvolvimento.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>React</span>
-                                    <span>CSS</span>
-                                    <span>Vite</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
-                                </div>
+                            <h3 className="all-project-name">HDC Host</h3>
+                            <p className="all-project-desc">
+                                Site institucional de hospedagem desenvolvido com HTML, CSS, PHP e MySQL. Layout responsivo com foco em clareza e usabilidade.
+                            </p>
+                            <div className="all-project-tags">
+                                <span className="tag">HTML</span>
+                                <span className="tag">CSS</span>
+                                <span className="tag">PHP</span>
+                                <span className="tag">MySQL</span>
                             </div>
                         </article>
 
-                        <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src=""  alt="" />
+                        <article className="all-project-card card-advocacia">
+                            <div className="all-project-card-img" aria-hidden="true">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcSet={escritorio_advImg} />
+                                    <img src={escritorio_advImg} alt="Print da tela do Projeto Escritório de Advocacia" />
+                                </picture>
+                                <div className="all-project-links">
+                                    <a className="btn" href="https://github.com/AndressaCabrall/Escritorio-Advocacia" target="_blank" rel="noreferrer">GitHub</a>
+                                    <a className="btn btn-primary" href="https://pearsonhardman.andressacabraltech.com.br" target="_blank" rel="noreferrer">Live</a>
+                                </div>
                             </div>
-
-                            <div className="project-content">
-                                <h3> Projeto em Construção</h3>
-                                <p>
-                                Website em desenvolvimento.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>React</span>
-                                    <span>CSS</span>
-                                    <span>Vite</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
-                                </div>
+                            <h3 className="all-project-name">Escritório de Advocacia</h3>
+                            <p className="all-project-desc">
+                                Site moderno e responsivo para escritório de advocacia, destacando serviços jurídicos e facilitando o contato com clientes.
+                            </p>
+                            <div className="all-project-tags">
+                                <span className="tag">React</span>
+                                <span className="tag">CSS</span>
+                                <span className="tag">Vite</span>
                             </div>
                         </article>
-                        <article className="project-card">
-                            <div className="project-image">
-                                <img className="project-image" src="" alt="" />
-                            </div>
-
-                            <div className="project-content">
-                                <h3> Projeto em Construção</h3>
-                                <p>
-                                Website em desenvolvimento.
-                                </p>
-
-                                <div className="project-tags">
-                                    <span>React</span>
-                                    <span>CSS</span>
-                                    <span>Vite</span>
-                                </div>
-
-                                <div className="project-links">
-                                <a className="btn" href="https://github.com/AndressaCabrall/projeto-hdc-host" target="_blank" rel="noreferrer">GitHub</a>
-                                <a className="btn btn-primary" href="https://hdchost.andressacabraltech.com.br/index.php" target="_blank" rel="noreferrer">Live</a>
-                                </div>
-                            </div>
-                        </article>
-                       
 
                     </div>
                 </div>
