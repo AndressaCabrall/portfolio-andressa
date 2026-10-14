@@ -1,0 +1,18 @@
+# Andressa Cabral — Portfólio
+
+> Portfólio pessoal de Andressa Cabral, desenvolvedora Front-end júnior. Constrói interfaces modernas, com foco em clareza, acessibilidade e boa experiência. Antes de programar, teve 8 anos na área administrativa e 15 anos empreendendo; a transição começou ao criar o próprio site de cortinas e persianas em WordPress. Busca vaga como Front-end júnior ou estágio, remoto ou presencial.
+
+## Tecnologias
+React (Vite), JavaScript (ES6+), HTML5 semântico, CSS3 (Flexbox, Grid, media queries), React Router, Git e GitHub.
+
+## Projetos
+- [AG Cortinas e Persianas](https://agcortinas.andressacabraltech.com.br): site de cortinas e persianas. Código: https://github.com/AndressaCabrall/projeto-hdc-host
+- [GoMundo — agência de viagem](https://viagens.vendasonlinemkt.com.br). Código: https://github.com/AndressaCabrall/GoMundo-agencia-viagem
+- [HDC Host](https://hdchost.andressacabraltech.com.br/index.php). Código: https://github.com/AndressaCabrall/projeto-hdc-host
+- [Escritório de advocacia](https://pearsonhardman.andressacabraltech.com.br). Código: https://github.com/AndressaCabrall/Escritorio-Advocacia
+
+## Contato
+E-mail: andressagclima@gmail.com
+WhatsApp: https://wa.me/5583986844430
+LinkedIn: https://www.linkedin.com/in/andressa-cabrall/
+GitHub: https://github.com/AndressaCabrall
